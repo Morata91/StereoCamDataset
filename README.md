@@ -24,24 +24,25 @@ project/
 
 ```
 
-## 準備
+## 手順
 
-1. dlibの顔ランドマーク検出モデルをダウンロード:
+1. パッケージのインストール
+```bash
+pip install -r requirements.txt
+```
+
+2. dlibの顔ランドマーク検出モデルをダウンロード:
 ```bash
 wget -P face_detector http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2
 bunzip2 face_detector/shape_predictor_68_face_landmarks.dat.bz2
 ```
 
-2. データセット解凍
+3. データセット解凍
 ```bash
-unzip 
-
-2. パッケージのインストール
-```bash
-pip install -r requirements.txt
+unzip gaze_dataset_rawdata.zip
 ```
 
-3. ラベリング
+4. ラベリング
 ```bash
 python label.py
 ```
@@ -71,12 +72,10 @@ python label.py
 
 
 
-
+## メモ
 
 person00
 MONITOR_TOP_LEFT = np.array([164 + 1329, 1810 - 1740, 0])
-
-
 
 person01~
 MONITOR_TOP_LEFT = np.array([250 + 1329, 1810 - 1740, 0])
