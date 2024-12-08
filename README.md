@@ -82,7 +82,10 @@ MONITOR_TOP_LEFT = np.array([250 + 1329, 1810 - 1740, 0])
 
 
 person00　村田
+
 person01　松浦
+
 person02　沙
+
 person03　酒井
 
